@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  modes = ['date' , 'date-time' , 'month' , 'month-year' , 'time' , 'time-date' , 'year'];
 
 }

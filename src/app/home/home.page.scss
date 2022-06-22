@@ -1,27 +1,19 @@
-#container {
-  text-align: center;
+ion-modal {
+  --background: rgba(0, 0, 0, 0.75);
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  &::part(content) {
+    backdrop-filter: blur(6px);
+  }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+  ion-content {
+    --background: transparent;
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+    --padding-top: 25vh;
+    --padding-start: 24px;
+    --padding-end: 24px;
 
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+    ion-datetime {
+      border-radius: 12px;
+    }
+  }
 }
